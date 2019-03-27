@@ -1,0 +1,37 @@
+{% extends 'all-instagram/base.html' %}
+
+{% block content %}
+{{block.super}}
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <boby>
+            
+
+        <div class="container">
+            <div class="row">
+                          
+                              
+        <h1>"WELCOME TO INSTAGRAM"</h1>
+
+  
+        {% for im in images%}
+        
+        <div class="col-md-2" id="im"> 
+        <img src="{{im.image.url}}"  class="img-responsive" alt="Image" >
+         
+        <p>{{im.image_name}}</p>
+        <p>{{im.image_caption}}</p>
+        <p>{{im.post_date}}</p>
+        
+       
+</div> 
+    {%endfor%}
+
+
+</div>
+</div>
+</boby>
+</html>
+{% endblock %}
