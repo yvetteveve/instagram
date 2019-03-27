@@ -89,9 +89,9 @@ WSGI_APPLICATION = 'instapp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'instapp',
+        'NAME': 'instagram',
         'USER': 'wecode',
-        'PASSWORD':'veve123',
+        'PASSWORD':'umuveve@',
         # 'HOST': ('DB_HOST'),
         # 'PORT':'',
     }
