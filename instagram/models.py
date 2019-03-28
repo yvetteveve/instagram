@@ -79,7 +79,7 @@ class NewsLetterRecipients(models.Model):
     name = models.CharField(max_length = 30)
     email = models.EmailField()
 
-class user(models.models)
-    Profile=models.CharField()
-    images = Image.objects.all()
+# class user(models.models)
+#     Profile=models.CharField()
+#     images = Image.objects.all()
     
