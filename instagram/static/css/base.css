@@ -3,8 +3,8 @@
     
     background-repeat: no-repeat;
     background-position: right;
-    padding:5%;
-    background-color: rgb(13, 24, 75);
+    padding:10%;
+    background-color: skyblue;
 }
 body{
   background-image:url("https://ak9.picdn.net/shutterstock/videos/33336979/thumb/12.jpg"); 
@@ -28,3 +28,10 @@ h1{
     background-color: skyblue;
     
 }
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }

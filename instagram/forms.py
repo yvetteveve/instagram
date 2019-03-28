@@ -12,3 +12,7 @@ class ImageForm(forms.ModelForm):
 class NewsLetterForm(forms.Form):
     your_name = forms.CharField(label='First Name',max_length=30)
     email = forms.EmailField(label='Email')
+
+class CommentForm(forms.Form):
+
+        comment =forms.CharField(label='Comment',max_length = 300)

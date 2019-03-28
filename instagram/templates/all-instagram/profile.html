@@ -6,16 +6,16 @@
     
    <div class="row">
      
-     <img src="{{article.picture.url}}"  class="img-responsive" alt="">
+     <img src="{{profile.picture.url}}"  class="img-responsive" alt="">
    </div>
 
    <div class="row">
-     <h1>Names:{{article.name}}</h1>
+     <h1>Names:{{profile.name}}</h1>
    </div>
    
    <div class="row">
      {% autoescape on %}
-     {{article.bio| safe}}
+     {{profile.bio| safe}}
     {% endautoescape %}
 
    </div>

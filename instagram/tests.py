@@ -3,7 +3,7 @@ from .models import Profile,Image,Comments
 class ProfileTestClass(TestCase):
     # Set up method
     def setUp(self):
-        self.kt = Profile(name="yvette veve",picture="https://www.instagram.com/p/BlDQch_H4VE/",bio="<p>sghjjrt</p>")
+        self.kt = Profile(name="yvette umubyeyi",picture="https://www.instagram.com/p/BlDQch_H4VE/",bio="<p>sghjjrt</p>")
     # Testing instance
     def test_instance(self):
         self.assertTrue(isinstance(self.kt,Profile))

@@ -1,4 +1,7 @@
+{%extends 'all-instagram/base.html'%}
+
 {% load bootstrap3 %} {% load staticfiles %}
+{% block content %}
 <!DOCTYPE html>
 <html>
 
@@ -10,13 +13,18 @@
   {{form.media}}
 
 {% block styles %} {% bootstrap_css %}
-  <link rel="stylesheet" href="{% static 'css/news.css' %}"> {% endblock %}
+  <link rel="stylesheet" href="{% static 'css/baseinstapp.css' %}"> {% endblock %}
 
 </head>
 
 <body>
 
-  <form  action="{%url 'displayarticle'%}" method="post" enctype="multipart/form-data">
+    <div class="container" id="imj">
+        <div class="row" >
+              
+                  
+            <h1>'Welcome To Instagram'</h1>
+  <form  action="{%url 'images'%}" method="post" enctype="multipart/form-data">
     {%csrf_token%}
 
     {% bootstrap_form form%}
@@ -26,7 +34,8 @@
    {% block scripts %}
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   {% bootstrap_javascript %} {% endblock %}
-
+</div>
 </body>
 
 </html>
+{% endblock %}

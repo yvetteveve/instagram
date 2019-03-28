@@ -1,10 +1,9 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse,Http404,HttpResponseRedirect
 from .forms import ProfileForm,NewsLetterForm,ImageForm
-from .email import send_welcome_email
+# from .email import send_welcome_email
 from django.contrib.auth.decorators import login_required
 from .models import Profile,Image
-
 from django.contrib.auth.models import User
 
 # Create your views here.
@@ -15,7 +14,7 @@ def welcome(request):
 @login_required(login_url='/accounts/login/')
 def prof(request,id):
     user = User.objects.get(id = id)
-    profiles = Profile.objects.get(user=user)
+    profiles = profile.objects.get(user=user)
     
     return render(request, 'all-instagram/profile.html',{"profiles":profiles},{"user":user})
 
@@ -23,7 +22,7 @@ def prof(request,id):
 def profile(request):
     current_user =request.user
     if request.method == 'POST':
-        form = ProfileForm(request.POST, request.FILES)
+        form = profileForm(request.POST, request.FILES)
         if form.is_valid():
              profile = form.save(commit=False)
              profile.user = current_user

@@ -1,15 +1,15 @@
-from django.core.mail import EmailMultiAlternatives
-from django.template.loader import render_to_string
-
-def send_welcome_email(name,receiver):
-    # Creating message subject and sender
-    subject = 'Welcome to Instagram'
-    sender = 'yvetteumubyeyi.com'
-
-    #passing in the context vairables
-    text_content = render_to_string('email/newsemail.txt',{"name": name})
-    html_content = render_to_string('email/newsemail.html',{"name": name})
-
-    msg = EmailMultiAlternatives(subject,text_content,sender,[receiver])
-    msg.attach_alternative(html_content,'text/html')
-    msg.send()
+from django.test import TestCase
+from .models import Profile,Image,Comments
+class ProfileTestClass(TestCase):
+    # Set up method
+    def setUp(self):
+        self.yvette= Profile(name="YVETTE",picture="https://images.pexels.com/photos/1239291/pexels-photo-1239291.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",bio="<p>sghjjrt</p>")
+        
+    # Testing instance
+    def test_instance(self):
+        self.assertTrue(isinstance(self.Yvette,Profile))
+        # Testing Save Method
+    def test_save_method(self):
+        self.yvette.save_profile()
+        profiles = Profile.objects.all()
+        self.assertTrue(len(profiles)>0)
