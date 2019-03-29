@@ -14,7 +14,7 @@ def welcome(request):
 @login_required(login_url='/accounts/login/')
 def prof(request,id):
     user = User.objects.get(id = id)
-    profiles = profile.objects.get(user=user)
+    profiles = Profile.objects.get(user=user)
     
     return render(request, 'all-instagram/profile.html',{"profiles":profiles},{"user":user})
 
@@ -22,7 +22,7 @@ def prof(request,id):
 def profile(request):
     current_user =request.user
     if request.method == 'POST':
-        form = profileForm(request.POST, request.FILES)
+        form = ProfileForm(request.POST, request.FILES)
         if form.is_valid():
              profile = form.save(commit=False)
              profile.user = current_user
