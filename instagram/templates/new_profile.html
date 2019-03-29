@@ -21,7 +21,7 @@
 <div class="container" id="imj" >
     <div class="row" >
     <h1> 'Welcome To Instagram'</h1>
-  <form  action="{%url 'displayProfile'%}" method="post" enctype="multipart/form-data">
+  <form  action="{%url 'displayProfile' %}" method="post" enctype="multipart/form-data">
     {%csrf_token%}
 
     {% bootstrap_form form%}

@@ -14,9 +14,9 @@ def welcome(request):
 @login_required(login_url='/accounts/login/')
 def prof(request,id):
     user = User.objects.get(id = id)
-    profiles = Profile.objects.get(user=user)
+    profiles = Profile.objects.get(id)
     
-    return render(request, 'all-instagram/profile.html',{"profiles":profiles},{"user":user})
+    return render(request, 'all-instagram/profile.html',{"profiles":profiles},{"id":id})
 
 @login_required(login_url='/accounts/login/')
 def profile(request):
