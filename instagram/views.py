@@ -32,7 +32,7 @@ def profile(request):
             form = ProfileForm()
     return render(request, 'new_profile.html',{"form":form})
 @login_required(login_url='/accounts/login/')
-def image(request):
+def new_image(request):
     current_user = request.user
     if request.method =='POST':
         form =  ImageForm(request.POST,request.FILES)
@@ -43,7 +43,7 @@ def image(request):
         return redirect("home")    
     else:  
             form = ImageForm()
-    return render(request,'new-image.html',{"form":form})
+    return render(request,'new_image.html',{"form":form})
 
 
 def email(request):

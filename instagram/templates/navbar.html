@@ -10,7 +10,7 @@
         <div class="container-fluid">
             <div class="navbar-header">
             <a class="navbar-brand" href="{% url 'home' %}">Home</a>
-           <a class="navbar-brand" href="{%url 'images'%}">Add</a>
+           <a class="navbar-brand" href="/accounts/register">Register</a>
         
             </div>
                 <!-- Adding a search form  -->
@@ -33,7 +33,9 @@
                                 <li>
                             <a href="{%url 'displayProfile'%}">Create Profile</a>
                           </li>
-
+                          <li>
+                            <a href="{%url 'new_image'%}">add image</a>
+                          </li>
                           <li>
                             <a href="/accounts/password/change">Change Password</a>
 
