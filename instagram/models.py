@@ -29,7 +29,7 @@ class profile(models.Model):
         profile = Profile.objects.filter(user = id).first()
         return profile
 class Image(models.Model):
-    # image_pic = models.ImageField(upload_to = 'p/', default='Image')
+    image_pic = models.ImageField(upload_to = 'p/', default='Image')
     image = models.ImageField(upload_to = 'instapp/')
     image_name = models.CharField(max_length = 50)
     image_caption = models.CharField(max_length =200)
