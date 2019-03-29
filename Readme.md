@@ -15,7 +15,7 @@ Users can post pics, comment, like and follow their friends,
 
 User can search other users and be able to see their stories and comment or like the pictures.
 
-Set Up and Installations
+### Set Up and Installations:
 Prerequisites
 Ubuntu Software
 Python3.6
@@ -36,8 +36,8 @@ Bootstrap 4 for the design
 JavaScript
 Heroku for the deployment
 Postgresql for the database
-### Support and contact details
-For any support please contact me 
+### Support and contact details:
+For any support please contact me: 
 on yvetteumubyeyi2@gmail.com 
 or 0782237885
 
