@@ -1,5 +1,5 @@
 from django import forms
-from .models import Image, Profile, Comments 
+from .models import Image,Profile,Comments,NewsLetterRecipients 
 class ProfileForm(forms.ModelForm):
     class Meta:
         model = Profile
@@ -16,3 +16,4 @@ class NewsLetterForm(forms.Form):
 class CommentForm(forms.Form):
 
         comment =forms.CharField(label='Comment',max_length = 300)
+      

@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from tinymce.models import HTMLField
 
 # Create your models here.
-class profile(models.Model):
+class Profile(models.Model):
     name = models.CharField(max_length=30)
     picture = models.ImageField(upload_to = 'instapp/')
     bio = HTMLField()
@@ -29,13 +29,13 @@ class profile(models.Model):
         profile = Profile.objects.filter(user = id).first()
         return profile
 class Image(models.Model):
-    image_pic = models.ImageField(upload_to = 'p/', default='Image')
+    # image_pic = models.ImageField(upload_to = 'p/', default='Image')
     image = models.ImageField(upload_to = 'instapp/')
     image_name = models.CharField(max_length = 50)
     image_caption = models.CharField(max_length =200)
     post_date = models.DateTimeField(auto_now=True)
     likes = models.IntegerField(default=0)
-    profile = models.ForeignKey(Profile,null = True,)
+    
 
     class Meta:
         ordering = ('-post_date',)
