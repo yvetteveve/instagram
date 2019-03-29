@@ -5,7 +5,7 @@ InstaG is a app where users can post pics, comment, like and follow their friend
 ## Description
 This is a simple web clone of the instagram website. A user can create an account and sign into it. The site supports uploading images, and following other users. users can view photos uploaded by other users in the home page of app.
 
-Specifications
+### Specifications
 Sign in to the application to start using.
 Upload my pictures to the application.
 See my profile with all my pictures.
