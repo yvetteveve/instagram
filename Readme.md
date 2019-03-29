@@ -37,7 +37,8 @@ JavaScript
 Heroku for the deployment
 Postgresql for the database
 Support and contact details
-For any support please contact me on nicoleha127@gmail.com or 0781899928
+For any support please contact me on yvetteumubyeyi2@gmail.com 
+or 0781899928
 
 License
 MIT Copyright (c) 2019 Hategekimana Nicole
