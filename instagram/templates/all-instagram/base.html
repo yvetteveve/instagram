@@ -13,6 +13,17 @@
  
     {% block styles %}
     {% bootstrap_css %}
+    <style>
+      img.smallscreen { display: none; }
+      @media only screen and (max-width: 320px) {
+          img { 
+              display: none; 
+          }
+          img.smallscreen { 
+              display: inline; 
+          }
+      }
+    </style>
     
     <link rel="stylesheet" href="{% static 'css/baseinstapp.css' %}">
     
