@@ -41,4 +41,4 @@ For any support please contact me on yvetteumubyeyi2@gmail.com
 or 0782237885
 
 License
-MIT Copyright (c) 2019 Hategekimana Nicole
+MIT Copyright (c) 2019 YVETTE UMUBYEYI
