@@ -36,6 +36,7 @@ Bootstrap 4 for the design
 JavaScript
 Heroku for the deployment
 Postgresql for the database
+
 ### Support and contact details:
 For any support please contact me: 
 on yvetteumubyeyi2@gmail.com 
