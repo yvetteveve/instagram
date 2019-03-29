@@ -1,6 +1,6 @@
 ## INSTAGRAM APP
 ### INTRODUCTION
-InstaG is a app where users can post pics, comment, like and follow their friends, March 28th, 2019.
+Instagram is a app where users can post pics, comment, like and follow their friends, March 28th, 2019.
 
 ## Description
 This is a simple web clone of the instagram website. A user can create an account and sign into it. The site supports uploading images, and following other users. users can view photos uploaded by other users in the home page of app.
