@@ -1,4 +1,4 @@
-{%extends 'all-instagram/base.html'%}
+{%extends 'all-awwards/base.html'%}
 {% load bootstrap3 %}
 {% load staticfiles %}
 {%block content%}
@@ -9,7 +9,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Instagram</title>
+  <title>Awwards</title>
   {{form.media}}
 
 {% block styles %} {% bootstrap_css %}
@@ -20,7 +20,7 @@
 <body>
 <div class="container" id="imj" >
     <div class="row" >
-    <h1> 'Welcome To Instagram'</h1>
+    <h1> 'Welcome to New Awwards'</h1>
   <form  action="{%url 'displayProfile' %}" method="post" enctype="multipart/form-data">
     {%csrf_token%}
 
